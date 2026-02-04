@@ -1,0 +1,51 @@
+
+conf t
+!
+interface Gi1/0/2
+no ipv6 pim bfd
+ipv6 nd cache expire 120 refresh
+!
+end
+wr
+aandlr-attr0-gw.net.disney.com
+conf t
+!
+interface Te1/0/40
+no ipv6 pim bfd
+ipv6 nd cache expire 120 refresh
+!
+end
+wr
+
+eorcrp-1120lab1-gw.net.disney.com
+conf t
+!
+interface Gi1/0/2
+no ipv6 pim bfd
+ipv6 nd cache expire 120 refresh
+!
+end
+wr
+
+ == aandlr-attr0-gw.net.disney.com == 
+
+conf t
+!
+interface Te1/0/40
+no ipv6 pim bfd
+ipv6 nd cache expire 120 refresh
+!
+end
+wr
+
+ == eorcrp-1120lab1-gw.net.disney.com == 
+
+conf t
+!
+interface Gi1/0/2
+no ipv6 pim bfd
+ipv6 nd cache expire 120 refresh
+!
+end
+wr
+
