@@ -3,8 +3,8 @@
 conf t
 
 router isis DGN interface {{ INTERFACE }} shutdown
-multicast-routing address-family ipv4 interface {{ INTERFACE } disable
-router pim address-family ipv4 interface {{ INTERFACE } disable
+multicast-routing address-family ipv4 interface {{ INTERFACE }} disable
+router pim address-family ipv4 interface {{ INTERFACE }} disable
 commit
 end
 
@@ -14,8 +14,8 @@ end
 conf t
 
 no router isis DGN interface {{ INTERFACE }} shutdown
-multicast-routing address-family ipv4 interface {{ INTERFACE } enable
-router pim address-family ipv4 interface {{ INTERFACE } enable
+multicast-routing address-family ipv4 interface {{ INTERFACE }} enable
+router pim address-family ipv4 interface {{ INTERFACE }} enable
 commit
 end
 
