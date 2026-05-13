@@ -30,6 +30,6 @@ for ci in config_items:
             if last_interface:
                 pairs.append((last_interface, line.strip()))
 
-    # Print all interface–bfd pairs
+    # Print
     for iface, bfd_line in pairs:
         print(f"\n{iface}" + "\n   no ipv6 pim bfd" +"\n   ipv6 nd cache expire 120 refresh\n\n")
